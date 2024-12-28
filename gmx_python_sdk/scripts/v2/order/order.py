@@ -460,7 +460,7 @@ class Order:
         Send WNT
         """
         try:
-            return self._exchange_router_contract_obj.encodeABI(
+            return self._exchange_router_contract_obj.encode_abi(
                 fn_name='sendWnt',
                 args=(
                     "0x31eF83a530Fde1B38EE9A18093A333D8Bbbc40D5",
